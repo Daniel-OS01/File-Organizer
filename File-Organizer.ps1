@@ -15,7 +15,7 @@ function get-destbytype($ext) {
         { $ext -match '(bib|ris|ini)' } { "References" }
         { $ext -match '(pptx|ppt)' } { "Presentations" }
         { $ext -match '(ipsw|img|iso|vsix)' } { "ISO-Images" }
-        { $ext -match '(epub|img|iso)' } { "Ebooks" }
+        { $ext -match '(epub|img)' } { "Ebooks" }
         { $ext -match '(htm|html|lnk|php)' } { "Website Related" }
         default { "$ext" }
     }
