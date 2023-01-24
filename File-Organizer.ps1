@@ -2,8 +2,7 @@ function get-destbytype($ext) {
     switch ($ext) {
         { $ext -match '(jpg|jpeg|png|gif|bmp|svg|webp)' } { "Photos" }
         { $ext -match '(divx|mpeg|avi|mkv|mp4)' } { "Video" }
-        { $ext -match '(js|java|py|class|vbs|jsp)' } { "Code" }
-        { $ext -match '(sql|ps1|pl|py|scpt)' } { "Scripts" }
+        { $ext -match '(sql|ps1|pl|scpt|js|java|py|class|vbs|jsp)' } { "Scripts-Code" }
         { $ext -match '(zip|7z|rar|tar|bz2|gz)' } { "Compressed" }
         { $ext -match '(doc|docx|pdf)' } { "Documents" }
         { $ext -match '(xls|xlsx|csv)' } { "Excel" }
